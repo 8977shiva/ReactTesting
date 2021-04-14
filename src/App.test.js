@@ -1,5 +1,6 @@
 // import { render, screen } from "@testing-library/react";
-import { render, within } from "@testing-library/jest-dom";
+// import { render } from "@testing-library/jest-dom";
+import { within } from "@testing-library/dom";
 import ReactDOM from "react-dom";
 import App from "./App";
 import Todo from "./todo";
@@ -22,5 +23,6 @@ it("Check the  header -within", () => {
   const root = document.createElement("div");
   ReactDOM.render(<Todo />, root);
   // expect(root.querySelector("h3").textContent).toBe("TODO");
-  const { getBytext, get };
+  const { getByText, getByLabelText } = within(root);
+  getByText("What needs to be done?");
 });
