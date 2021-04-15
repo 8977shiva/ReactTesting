@@ -13,7 +13,7 @@ const Todo = () => {
       return;
     }
     const newItem = {
-      text: this.state.text,
+      text: text,
       id: Date.now(),
     };
 
