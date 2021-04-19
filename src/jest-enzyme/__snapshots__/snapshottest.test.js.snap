@@ -23,7 +23,9 @@ exports[`creating snapshot 1`] = `
       1
     </button>
   </form>
-  <div>
+  <div
+    className="list-container"
+  >
     <ul />
   </div>
 </div>
