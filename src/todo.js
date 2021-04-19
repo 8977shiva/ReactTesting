@@ -14,7 +14,7 @@ const Todo = () => {
     }
     const newItem = {
       text: text,
-      id: Date.now(),
+      id: Date.now()
     };
 
     setItems(items.concat(newItem));
