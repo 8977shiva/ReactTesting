@@ -29,7 +29,7 @@ const Todo = () => {
         <input id="new-todo" onChange={handleChange} value={text} />
         <button>Add #{items.length + 1}</button>
       </form>
-      <div>
+      <div className="list-container">
         <ul>
           {items.map((item) => (
             <li key={item.id}>{item.text}</li>
